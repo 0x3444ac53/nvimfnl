@@ -9,4 +9,5 @@
  {:import :astrocommunity.pack.python}
  {:import :astrocommunity.colorscheme}
  {:import :astrocommunity.terminal-integration.toggleterm-manager-nvim}
- {:import :astrocommunity.editing-support.rainbow-delimiters-nvim}]
+ {:import :astrocommunity.editing-support.rainbow-delimiters-nvim}
+ {:import :astrocommunity.completion.cmp-latex-symbols}]

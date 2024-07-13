@@ -4,7 +4,7 @@
     (fn [x] (.. "*." x))
     [:cljs :py :scm :fnl :js :ts :sh :lua :clj]))
 
-(vim.cmd "colorscheme gruvbox-baby")
+(vim.cmd "colorscheme base16-gruvbox-dark-pale")
 
 (vim.api.nvim_exec
   "autocmd TermOpen * tnoremap <buffer> <Esc> <C-\\><C-n>" false)
