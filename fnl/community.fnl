@@ -7,6 +7,7 @@
  {:import :astrocommunity.pack.yaml}
  {:import :astrocommunity.pack.clojure}
  {:import :astrocommunity.pack.python}
+ {:import :astrocommunity.pack.typst}
  {:import :astrocommunity.colorscheme}
  {:import :astrocommunity.terminal-integration.toggleterm-manager-nvim}
  {:import :astrocommunity.editing-support.rainbow-delimiters-nvim}

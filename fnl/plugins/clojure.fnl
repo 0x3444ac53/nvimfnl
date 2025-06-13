@@ -2,12 +2,6 @@
 (local uu (require :dotfiles.util))
 
 [(uu.tx
-   :clojure-vim/vim-jack-in
-   {:ft :clojure
-    :cmd :Clj
-    :lazy true})
-
- (uu.tx
    :williamboman/mason-lspconfig.nvim
    {:opts (fn [_ opts]
             (set opts.ensure_installed (utils.list_insert_unique opts.ensure_installed [:clojure_lsp])))})

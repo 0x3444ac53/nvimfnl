@@ -2,12 +2,15 @@
 (local langs
   (core.map 
     (fn [x] (.. "*." x))
-    [:cljs :py :scm :fnl :js :ts :sh :lua :clj]))
-
-(vim.cmd "colorscheme base16-gruvbox-dark-pale")
+    [:cljs :py :scm :fnl :js :ts :sh :lua :clj :rs]))
 
 (vim.api.nvim_exec
   "autocmd TermOpen * tnoremap <buffer> <Esc> <C-\\><C-n>" false)
+
+(vim.api.nvim_create_autocmd "TermOpen"
+  {:pattern "*"
+   :callback (fn [] 
+               (set vim.wo.spell false))})
 
 
 (vim.api.nvim_create_autocmd 
@@ -26,3 +29,8 @@
   :callback (fn [] 
               (when vim.opt_local.number
                 (set vim.opt_local.relativenumber false)))})
+
+(when vim.g.neovide
+  (vim.cmd"cd ~"))
+
+(set vim.opt.ambiwidth :double)

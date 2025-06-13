@@ -1,8 +1,11 @@
 (local uu (require :dotfiles.util))
 
+(set vim.g.everforest_background :hard)
+(set _G.background :dark)
+
 (uu.tx
   :AstroNvim/astroui
-  {:opts {:colorscheme :astrodark
+  {:opts {:colorscheme "base16-gruvbox-dark-pale"
           :highlights {:astrotheme {}
                        :init {}}
           :icons {:LSPLoading1 "⠋"

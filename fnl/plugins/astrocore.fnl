@@ -22,7 +22,6 @@
                   :icons_enabled true
                   :ui_notifications_enabled true
                   :resession_enabled true
-
                   ;; https://neovide.dev/configuration.html
                   :neovide_hide_mouse_when_typing true
                   :neovide_cursor_animation_length 0.05
@@ -36,9 +35,8 @@
                     :sessionoptions "blank,curdir,folds,help,tabpages,winsize"
                     :clipboard "unnamedplus"
                     :list true
-                    :listchars "tab:▷ ,trail:·,extends:◣,precedes:◢,nbsp:○"
                     :shortmess "atOIc"
                     :cmdheight 1
                     :foldcolumn "0"
                     :showtabline 1
-                    :guifont "FiraCode Nerd Font:h10"}}}})
+                    :guifont "3270 Nerd Font Mono:h20"}}}})
